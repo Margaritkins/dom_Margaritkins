@@ -40,3 +40,20 @@ function showAlert(event) {
 }
 
 logo.addEventListener('click',showAlert);
+
+
+
+// get h2 from 2 article
+
+const [, h2FromArt2] = document.querySelectorAll('h2');
+const [, hFromArt2] = document.getElementsByTagName('h2')
+
+console.log(h2FromArt2);
+console.log(hFromArt2);
+
+//get p with class text
+
+const pText = document.getElementsByClassName('text');
+const pWithClass = document.querySelectorAll('.text');
+console.log(pText);
+console.log(pWithClass);
