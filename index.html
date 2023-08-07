@@ -1,22 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>DOM</title>
-<link rel="stylesheet" href="./assets/style/style.css">
-<script defer src="./assets/js/main.js"></script>
-</head>
-<body>
-  <div>text</div>
-  <h1>Main heading</h1>
-  <button>click me</button>
-
-  <ul>
-    <li><a href="">link 1</a></li>
-    <li><a href="">link 2</a></li>
-    <li><a href="">link 3</a></li>
-  </ul>
-</body>
+    <title>DOM</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <script defer src="./assets/js/main.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <a href="https://ru.legacy.reactjs.org/docs/hello-world.html" class="logo">logo</a>
+      </header>
+      <!-- //дістати:
+      усі посилання всередині статей
+      усі абзаци, які не мають клас тест -->
+      <main>
+        <section>
+          <article class="main-article">
+            <h2>title for article 1</h2>
+            <img src="" alt="sea" />
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              harum nostrum quos, ullam odio atque qui! Soluta error vero
+              expedita!
+            </p>
+            <p>
+              Omnis, sunt atque hic <a href="#">voluptatibus</a> voluptatibus
+              minima ab odio. Natus laboriosam officiis earum, eius aut impedit
+              laudantium. Molestias veniam corporis error?
+            </p>
+            <p class="text">
+              Aut ipsa est tempora ut. Laboriosam enim voluptatum autem error,
+              est, sequi mollitia aperiam, obcaecati fuga corporis quasi?
+              Quisquam, vel?
+            </p>
+          </article>
+          <article class="main-article">
+            <h2>title for article 2</h2>
+            <img src="" alt="dog" />
+            <p class="text">
+              Lorem ipsum dolor sit amet
+              <a href="#">voluptatibus</a> consectetur adipisicing elit. Eos
+              unde laborum eius ad eaque incidunt quis aperiam fuga impedit
+              iure.
+            </p>
+            <p>
+              Neque laboriosam eius reprehenderit quia odit ut veritatis
+              incidunt itaque id repellendus, earum beatae architecto ea
+              nostrum, labore at nemo!
+            </p>
+            <p class="text">
+              Repellat, sunt necessitatibus, cumque voluptate harum odio ab
+              explicabo officiis cum magni placeat ducimus ipsum minima non,
+              sint facilis iure.
+            </p>
+          </article>
+        </section>
+      </main>
+      <footer>&copy;2023</footer>
+    </div>
+  </body>
 </html>
