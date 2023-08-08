@@ -65,7 +65,7 @@ const slider = new Slider(imagesDB);
 // const img = document.querySelector('.slide>img');
 // const img = document.querySelector(alt='img');
 const img = document.querySelector(".slide>img");
-console.log(img);
+// console.log(img);
 // const image = document.querySelector(alt='image2');
 // console.log(image);
 const [prevBtn, nextBtn] = document.querySelectorAll(
@@ -76,15 +76,15 @@ img.src = slider.currentSlide;
 // console.log(prev);
 // const [,next] = document.querySelectorAll('button');
 // console.log(next);
-console.log(slider.currentSlide);
+// console.log(slider.currentSlide);
 
 //function closure
-function btnHandler(direction = 'next'){
-  return function(){
-    slider.currentIndex = slider[direction];
-    img.src = slider.currentSlide;
-  };
-}
+// function btnHandler(direction = 'next'){
+//   return function(){
+//     slider.currentIndex = slider[direction];
+//     img.src = slider.currentSlide;
+//   };
+// }
 
 //function closure optimization
 const btnHandler = (direction = 'next') => ()=> {
@@ -99,3 +99,5 @@ prevBtn.addEventListener("click", btnHandler('prev'));
 nextBtn.addEventListener("click", btnHandler('next'));
 // => {  slider.currentIndex = slider.next;
 //   img.src = slider.currentSlide; });
+
+
